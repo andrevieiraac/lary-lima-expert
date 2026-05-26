@@ -118,9 +118,6 @@ export default function ChallengeSection() {
 
           {/* Large Images columns */}
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <div className="text-left md:text-center lg:text-left mb-2">
-              <span className="text-white font-medium text-sm">Toque em qualquer imagem para ampliar e ler as planilhas</span>
-            </div>
 
             {/* Visual presentation using object-contain inside dark mockup frames to see them without cropping */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
