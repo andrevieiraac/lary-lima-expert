@@ -1,0 +1,6 @@
+{
+  "name": "Laryssa Lima - Personal Trainer",
+  "description": "Landing page premium para Laryssa Lima, personal trainer especialista em hipertrofia e emagrecimento.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

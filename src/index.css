@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  
+  --color-pink-primary: #ff4fb1;
+  --color-pink-hover: #e03593;
+  --color-pink-glow: rgba(255, 79, 177, 0.4);
+  --color-dark-bg: #000000;
+  --color-dark-card: #0d0d0d;
+  --color-dark-card-hover: #141414;
+  --color-dark-border: #1a1a1a;
+  --color-pink-light: #fbcfe8;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dark-bg);
+    color: #f4f4f5;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4fb1;
+}
+
+/* Pulse glow effect button */
+.pulse-glow {
+  box-shadow: 0 0 15px var(--color-pink-glow);
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 79, 177, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 79, 177, 0.7);
+  }
+}
+
